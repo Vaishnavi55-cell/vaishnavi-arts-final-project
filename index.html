@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Vaishnavi Arts</title>
+<style>
+body{font-family:Arial;padding:20px;background:#fff8f0}
+input,button{padding:12px;margin:5px;border-radius:8px;border:1px solid #ccc}
+button{background:#ff6b6b;color:white;cursor:pointer;font-weight:bold}
+table{width:100%;margin-top:20px;border-collapse:collapse}td,th{border:1px solid #ddd;padding:10px;background:white}
+h2{color:#ff6b6b}
+</style>
+</head><body>
+<h2>🎨 Vaishnavi Arts - Daily Sale</h2>
+<input id="item" placeholder="Item Name">
+<input id="customer" placeholder="Customer Name">
+<input id="price" type="number" placeholder="Price ₹">
+<input id="category" placeholder="Category like Keychain/Frame">
+<button onclick="addSale()">Add Sale</button>
+<button onclick="loadSales()">Refresh</button>
+<h3 id="total">Total: ₹0</h3>
+<table><thead><tr><th>Item</th><th>Customer</th><th>Price</th><th>Time</th></tr></thead><tbody id="list"></tbody></table>
+<script src="renderer.js"></script>
+</body></html>
